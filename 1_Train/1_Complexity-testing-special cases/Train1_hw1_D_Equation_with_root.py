@@ -27,7 +27,7 @@ def equation_with_root(a: int, b: int, c: int) -> str:
     :return: {число, No Solution, Many Solution},решение уравнения
     """
     if c < 0 or (a == 0 and (c * c - b) != 0):
-        print('NO SOLUTION')
+        return 'NO SOLUTION'
     else:
         if a == 0 and (c * c - b) == 0:
             return 'MANY SOLUTIONS'
